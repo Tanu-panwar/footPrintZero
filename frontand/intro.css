@@ -1,0 +1,119 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full Page Centering */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("images/index.bg.png") ;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+
+/* Circular Logo */
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150%;
+    margin: 0 auto 20px;
+}
+
+/* Slogan */
+.slogan {
+    font-size: 16px;
+    color:white;
+    margin-bottom: 10px;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 20px;
+}
+
+/* Start Experience Button */
+.start-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background-color: #388E3C;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .main-heading {
+        font-size: 24px;
+    }
+    .slogan {
+        font-size: 14px;
+    }
+    .start-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+

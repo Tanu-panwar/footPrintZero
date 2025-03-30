@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="carbon.css">
+</head>
+<body>
+
+    <div class="calculator-wrapper">
+        <div class="calculator-container">
+            <h1>Carbon Footprint Calculator</h1>
+            <p>Find out how much carbon you generate and get suggestions to reduce it.</p>
+            <form>
+                <label for="electricity">Monthly Electricity Usage (kWh):</label>
+                <input type="text" id="electricity" placeholder="Enter kWh">
+    
+                <label for="fuel">Monthly Fuel Consumption (Litres):</label>
+                <input type="text" id="fuel" placeholder="Enter Litres">
+    
+                <label for="diet">Diet Type:</label>
+                <select id="diet">
+                    <option>Vegan</option>
+                    <option>Vegetarian</option>
+                    <option>Non-Vegetarian</option>
+                </select>
+    
+                <label for="waste">Monthly Waste Production (kg):</label>
+                <input type="text" id="waste" placeholder="Enter kg">
+    
+                <label for="water">Daily Water Usage (liters):</label>
+                <input type="text" id="water" placeholder="Enter liters">
+    
+                <label for="flights">Flights Taken per Month:</label>
+                <input type="text" id="flights" placeholder="Enter flights">
+    
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="carbon.js"></script>
+</body>
+</html>
