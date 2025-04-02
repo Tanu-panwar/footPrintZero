@@ -317,8 +317,64 @@ header .navbar {
 }
 
 .feature-card h3 {
-    color: #003e29;
+    color:#023821;
 }
+
+/* Why Us Section */
+
+.whyus-section {
+    padding: 50px 0 100px;
+    background-color: #faf4f5;
+}
+.whyus-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.whyus-section .icons {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.whyus-section .icons .whyus-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: 50%;
+
+}
+.whyus-section .icons .name {
+    margin-bottom: 16px;
+    font-size: 1rem;
+
+}
+
+.whyus-section .icons .text {
+    line-height: 25px;
+
+}
+
+.whyus-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: #E67E22;
+}
+.whyus-section .swiper-slide-button {
+    margin-top: -50px;
+    color: #E67E22;
+    transition: 0.3s ease;
+}
+.whyus-section .swiper-slide-button:hover {
+    color: #023821;
+}
+
+
+/* Responsive Design */
 
 
 @media screen and (max-width:900px) {
@@ -403,4 +459,15 @@ header .navbar {
     max-width: 250px;
     aspect-ratio: 1;
 }
+}
+
+@media screen and (max-width:640px) {
+.whyus-section .slider-wrapper {
+    margin: 0 0 30px;
+}
+
+.whyus-section .swiper-slide-button {
+    display: none;
+}
+
 }
