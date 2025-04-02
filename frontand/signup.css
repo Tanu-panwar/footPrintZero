@@ -14,8 +14,75 @@ body{
     background-size: cover;
     background-position: center;
 }
+/*navbar styling*/
+ul {
+    list-style: none;
+}
+a {
+ 
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+   
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    margin-top: -625px;
+    background-color:#023821;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+
+}
+.navbar .nav-logo .logo-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.navbar .nav-menu .nav-link {
+    color: white;
+    border-radius: 40px;
+    font-size: 1.12rem;
+    padding: 10px 20px;
+    transition: 0.2s ease-in;
+}
+.navbar .nav-menu .nav-link:hover {
+    color:#fff; 
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-color: white;
+    /* background:#E67E22; */
+}
+.navbar :where(#menu-close-button,#menu-open-button) {
+    display: none;    
+}
+
+/* signup */
 .wrapper{
     width: 420px;
+    margin-top: 100px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);

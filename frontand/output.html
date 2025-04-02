@@ -61,12 +61,54 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <!-- add charts -->
-    <div class="graphBox">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="main-content">
+            <div class="piechart">
+                <h1>Piechart of Carbon Footprint</h1>
+                <canvas id="carbonChart"></canvas> <!-- Canvas for pie chart -->
+            </div>
+            
+            <div class="card-container">
+                <h1>Tips to reduce Carbon FootPrint</h1>
+                <div class="card" id="footprintValue">
+                    <p class="card-title">Value</p>
+                    <p class="card-info">----</p>
+                </div>
+                <div class="card" id="footprintMessage">
+                    <p class="card-title">Message</p>
+                    <p class="card-info">------</p>
+                </div>  
+                <!-- <div class="card" id="electricityDiv">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p class="card-title">Your electricity usage is <span id="electricity-output">0</span> kg CO₂</p>
+                    <p class="card-info">in kWh</p>
+                </div> -->
+                <div class="card" id="dynamicFootprint">
+                    <p class="card-title">Your Carbon Footprint</p>
+                    <p class="card-info" id="footprintData">Loading...</p>
+                </div>
+                <div class="card" id="fuelDiv">
+                    <p class="card-title">Monthly Fuel Consumption</p>
+                    <p class="card-info">in litre</p>
+                </div>
+                <!-- <div class="card" id="wasteDiv">
+                    <p class="card-title">Monthly Waste Production</p>
+                    <p class="card-info">in kg</p>
+                </div> -->
+                <!-- <div class="card" id="waterDiv"></div> -->
+                <div class="card" id="vehicleDiv">
+                    <p class="card-title">Personal Vehicle Usage</p>
+                    <p class="card-info">in km/month</p>
+                </div>
+                <div class="card" id="flightsDiv">
+                    <p class="card-title">Flights Taken per Month</p>
+                    <p class="card-info">in number</p>
+                </div>
+                <!-- <div class="card" id="homeDiv"></div> -->
+            </div>
+        </div>
     </div>
     <script src="output.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>
