@@ -7,12 +7,13 @@
     <title>GreenTech - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="landing.css">
+    <!--link swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
      <!-- Navbar -->
     <header>
-       
         <nav class="navbar section-content">
             <a href="#" class="nav-logo">
                 <h2 class="logo-text">🍃 GreenTech</h2>
@@ -21,19 +22,19 @@
 
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About us</a>
+                    <a href="#aboutus" class="nav-link">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Features</a>
+                    <a href="#features" class="nav-link">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Why us</a>
+                    <a href="#whyus" class="nav-link">Why us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact Us</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
                 </li>
                 <li class="nav-item">
                     <a href="./login.html" class="nav-link">Login</a>
@@ -49,12 +50,10 @@
 
     <main>
          <!-- hero section -->
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="section-content">
                 <div class="hero-details">
-
-                   
-                    <h2 class="title">Innovate. Sustain. Thrive. 🌿💡</h2>
+                    <h2 class="title">Innovate. Sustain. Thrive.</h2>
                     <h3 class="subtitle">Empowering a Sustainable Future with Smart Technology!</h3>
                     <p class="description">GreenTech revolutionizes sustainability with smart technology. Join us in
                         creating a greener future. 🌍💡</p>
@@ -82,7 +81,7 @@
             </div>
         </section>
          <!--about section -->
-        <section class="about-section">
+        <section class="about-section" id="aboutus">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="images/bg.aboutus.webp" alt="About" class="about-image">
@@ -99,69 +98,153 @@
                 
                 <Br>Join us in redefining sustainability with GreenTech – where technology meets responsibility!🌍💡</br></p>
 
-                <div class="social-link-list">
-                    <a href="#" class="social-link"><i class="fa-brands
-                        fa-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands
-                        fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands
-                        fa-x-twitter"></i></a>
-                </div>
-                <button class="btn learn-more">Learn More</button>
+               
+                <!--<button class="btn-learn-more">Learn More</button>-->
             </div>
             </div>
         </section>
-
-        <section class="features">
+        <!--feature section -->
+        <section class="features" id="features">
             <h2 class="section-title">Features</h2>
-            <div class="feature-container 1">
+            <div class="feature-container ">
                 <div class="feature-card">
-                    <img src="images\calcfeaturebg.jpg" alt="AI Energy Management">
+                    <img src="images\calcfeaturebg.jpg" alt="AI Energy Management" class="feature-image">
                     <h3>Carbon Calculator</h3>
                     <p>Calculate your environmental impact based on daily activities.</p>
                 </div>
-
                 <div class="feature-card">
-                    <img src="images\aifeaturebg.jpg" alt="AI Energy Management">
+                    <img src="images\aifeaturebg.jpg" alt="AI Energy Management" class="feature-image" >
                     <h3>AI Ecobot</h3>
                     <p>Get eco-friendly tips and sustainability advice through AI assistance.</p>
                 </div>
-
                 <div class="feature-card">
-                    <img src="images\ecoswapfeaturebg.jpg" alt="AI Energy Management">
+                    <img src="images\ecoswapfeaturebg.jpg" alt="AI Energy Management" class="feature-image">
                     <h3>Eco Swap</h3>
                     <p>Find and buy eco-friendly, sustainable products easily.</p>
                 </div>
-            </div>
-        <div class="feature-container 2">
                 <div class="feature-card">
-                    <img src="images\sustainablefeaturebg.jpg" alt="Smart Waste Management">
+                    <img src="images\sustainablefeaturebg.jpg" alt="Smart Waste Management" class="feature-image">
                     <h3>Sustainable Travel Advisor</h3>
                     <p>Eco-friendly travel tips to reduce your carbon footprint.</p>
             
                 </div>
-        
                 <div class="feature-card">
-                    <img src="images\rewardfeaturebg.jpg" alt="reward section">
+                    <img src="images\rewardfeaturebg.jpg" alt="reward section" class="feature-image">
                     <h3>Eco Challenges</h3>
                     <p>Participate in eco-friendly challenges and win rewards.</p>
                 </div>
-
                 <div class="feature-card">
-                    <img src="images\communityfeaturebg.jpg" alt="community section">
+                    <img src="images\communityfeaturebg.jpg" alt="community section"  class="feature-image" >
                     <h3>Community Forum</h3>
                     <p>Join discussions, share ideas, and promote sustainability.</p>
                 </div>
-        
             </div>
         </section>
-
-        
+        <!--whyus section -->
+    <section class="whyus-section" id="whyus">
+        <h2 class="section-title">Why Us</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="icons-list swiper-wrapper ">
+                            <li class="icons swiper-slide">
+                               <img src="images\icon1.jpg" alt="icons" class="whyus-image">
+                                    <h3 class="name">Eco-Friendly Solutions</h3>
+                                    <i class="text">Our products are designed to reduce carbon footprints and promote environmental sustainability, making a real impact on the planet.</i>
+                            </li>
+                            <li class="icons swiper-slide">
+                                <img src="images\icon2.jpg" alt="icons" class="whyus-image">
+                                    <h3 class="name">Smart Technology</h3>
+                                    <i class="text">We utilize cutting-edge technologies to ensure efficiency, quality, and sustainability. Our solutions lead the way in tech-driven environmental change.</i>
+                            </li>
+                            <li class="icons swiper-slide">
+                                <img src="images\icon3.jpg" alt="icons" class="whyus-image">
+                                    <h3 class="name">Customer Satisfaction</h3>
+                                    <i class="text">Your satisfaction is our top priority. We offer 24/7 customer support and personalized services to ensure your needs are always met.</i>
+                            </li>
+                            <li class="icons swiper-slide">
+                                <img src="images\icon4.jpg" alt="icons" class="whyus-image">
+                                    <h3 class="name">Reliable & Secure</h3>
+                                    <i class="text">With state-of-the-art security features and reliable performance, our solutions ensure peace of mind for your business and personal use.</i>
+                            </li>
+                            <li class="icons swiper-slide">
+                                <img src="images\icon5.jpg" alt="icons" class="whyus-image">
+                                    <h3 class="name">Resource Optimization</h3>
+                                    <i class="text">We focus on maximizing resource efficiency, helping businesses reduce waste and optimize usage with smarter solutions</i>
+                                </li>
+                            <li class="icons swiper-slide">
+                                <img src="images\icon6.jpg" alt="icons" class="whyus-image">
+                                    <h3 class="name">Proven Track Record</h3>
+                                    <i class="text">GreenTech has a history of success, delivering sustainable solutions to clients across industries. Our results speak for themselves.</i>
+                            </li>
+                        </ul>
+                            
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--contactus section -->   
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>support@greentech.com</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(123) 456-78909</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>www.greentech.com</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Available 24/7</p>
+                </li>
+            </ul>
+            <form action="#" class="contact-form">
+                <input type="text" placeholder="Your Name" class="form-input" required>
+                <input type="text"placeholder="Your Email" class="form-input" required>
+                <textarea placeholder="Your Message" class="form-input"required></textarea>
+                <button class="submit-button">Submit</button>
+            </form>
+        </div>
+        </div>
+    </section>
+     <!--footor-->
+     <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">© 2025 GreenTech. All Rights Reserved.</p>
+            <div class="social-link-list">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy Policy</a>
+                <span class="seprarator">.</span>
+                <a href="#" class="policy-link">Terms & Condtions</a>
+            </p>
+        </div>
+     </footer>
 
     </main>
+    <!--linkind swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--linkind custom script-->
+        
     <script src="landing.js"></script>
 </body>
-
-</body>
-
 </html>
