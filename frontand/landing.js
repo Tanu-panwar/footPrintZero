@@ -43,3 +43,4 @@ const swiper = new Swiper('.slider-wrapper', {
         }
     }
 });
+ 
