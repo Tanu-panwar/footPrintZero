@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Secobot - GreenTech</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6fff9;
+      margin: 0;
+      padding: 0;
+    }
+    header, section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .chat-button {
+      padding: 12px 25px;
+      background-color: #003e29;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🤖 AI Ecobot</h1>
+    <p>Your Smart Assistant for Environmental Help</p>
+  </header>
+
+  <section>
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Smart Query Handling</h3>
+        <p>Answers environmental queries instantly.</p>
+      </div>
+      <div class="feature-card">
+        <h3>24/7 Support</h3>
+        <p>Always active to help users any time.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Green Tips</h3>
+        <p>Gives eco-friendly suggestions based on inputs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Try AI Ecobot Now</h2>
+    <p>Click the button below to talk with our AI chatbot</p>
+    <button class="chat-button" onclick="openTidio()">Chat with Ecobot</button>
+  </section>
+
+  <!-- Tidio Chatbot Script -->
+  <script src=http://code.tidio.co/ixf4mz4e5xxzusyzzn7nifyzoznzihmj.js async></script>
+  <script>
+    function openTidio() {
+      if (window.tidioChatApi) {
+        window.tidioChatApi.open();
+      }
+    }
+  </script>
+
+</body>
+</html>

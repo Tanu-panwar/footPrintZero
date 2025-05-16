@@ -44,7 +44,6 @@
                     <a href="./signup.html" class="nav-link">Sign Up</a>
                 </li>
             </ul>
-
             <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
@@ -237,6 +236,18 @@
     
     <!--linkind custom script-->
     <script src="landing.js"></script>
+
+    <script src=http://code.tidio.co/ixf4mz4e5xxzusyzzn7nifyzoznzihmj.js async>
+        function openTidioChat() {
+          if (window.tidioChatApi) {
+            window.tidioChatApi.open();
+          }
+        }
+      
+        document.addEventListener("tidioChat-ready", function () {
+          window.tidioChatApi.hide(); // Page load par chatbot hide rahe
+        });
+      </script>
 
 </body>
 </html>
