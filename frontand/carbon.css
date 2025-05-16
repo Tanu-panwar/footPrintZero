@@ -6,14 +6,15 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    height: 100vh; /* Ensures the body takes up full viewport height */
+    margin: 0; /* Removes any default margin */
+    overflow: hidden; /* Prevents scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('images/calc.bg.jpg') no-repeat center center/cover;
 }
+
 
 .calculator-wrapper {
     display: flex;
@@ -21,13 +22,16 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
+    margin-top: 5px;
+    position: relative;
 }
 
 /* Styling the calculator */
 .calculator-container {
     background:rgba(35, 74, 25, 0.7); /* Light background */
     padding: 20px;
-    padding-top: 70px;
+    position: absolute;
+    padding-top: 30px;
     gap: 4px;
     margin-top: 0px;
     margin-left: 24px;
@@ -35,23 +39,42 @@ body {
     height: 660px;
     width:200px;
     min-width: 304px;
-    text-align: center;
+    /* text-align: center; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
 }
+.calculator-container::-webkit-scrollbar {
+    width: 6px; /* Control the width of the scrollbar */
+    height: 6px; /* Control the height if the scrollbar is horizontal */
+    border-radius: 5px; /* Round corners of the scrollbar */
+  }
 
+.elements {
+    margin-bottom: 15px; /* Adjust this value to control the space between divs */
+  }
+  .elements label {
+    margin-bottom: 2.5px; /* Reduces the gap between label and input */
+    margin-left: 5px;
+    font-weight: 540;
+    font-size: 15.5px;
+  }
 
 h1 {
     font-size: 30px;
     margin-bottom: 15px;
-    margin-top: 0px;
+    margin-top: 20px;
     padding-top: 0px;
     color: white;
+    text-align: center;
 }
 
 p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color:#FFD700;
+    font-size: 16px;
+    margin-bottom: 22px;
+    font-weight: 550;
+    color:#E67E22;
+    text-align: center; 
+     /* FFD700 */
 }
 
 .input-group {
@@ -67,12 +90,47 @@ label {
     color:white;
 }
 
+
 input, select {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: none;
     outline: none;
+}
+.radio1 {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Controls spacing between label & options */
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option input[type="radio"] {
+    width: 15px; /* Slightly larger radio button */
+    height: 15px;
+    accent-color: #023821; /* Darker radio button */
+    border: 2px solid #023821; /* Border around radio button */
+    margin-right: 8px; /* Less space between circle & Yes/No */
+}
+.elements select{
+    font-weight: 450;
+    font-size: 15px;
+    color: #023821;
+}
+
+.elements input[type="text"]{
+    border: 3px solid #023821;
+    color: #023821;
+    font-weight: 450;
+    font-size: 15px;
+}
+.elements select{
+    border: 3px solid #023821;
+    cursor: pointer;
 }
 
 button {
@@ -86,12 +144,14 @@ button {
     font-weight: bold;
     cursor: pointer;
     border-radius: 50px;
+    margin-left: 35px;
 }
 
 button:hover {
-    background:#FFD700;
+    background:#E67E22;
     border: none;
     color: white;
+    font-size: 18px;
 }
 
 #resultBox {
