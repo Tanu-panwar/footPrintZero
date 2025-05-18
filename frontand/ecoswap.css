@@ -11,30 +11,38 @@ body {
   color: #003e29;
 }
 
-/* Header */
+/* Hero section */
 .ecoswap-header {
-  background: url('images/ecoswap.bg.png') no-repeat center center/cover;
-  height: 50vh;
-  width: 1550px;
-  position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  background: linear-gradient(90deg,#2aa8a4 0%, #00b386 100%);
+  color: #fff;
+  gap: 2rem;
 }
 .ecoswap-header .overlay {
-  background-color: #003e29;
-  color: white;
-  padding: 30px;
-  text-align: center;
-  width: 90%;
+  flex: 1 1 40%;
+}
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+.ecoswap-image {
+  flex: 1 1 50%;
+  text-align: right;
+}
+.ecoswap-image img {
+  max-width: 100%;
   border-radius: 12px;
-}
-.ecoswap-header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-.ecoswap-header p {
-  font-size: 1.1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 /* Filters */
