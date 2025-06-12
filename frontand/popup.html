@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GreenTech Popup Example</title>
+<style>
+  /* Popup background */
+  .modal-bg {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 62, 41, 0.7); /* GreenTech theme dark transparent */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Popup container */
+  .modal-content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    color: #003e29;
+  }
+
+  /* Close button */
+  .close-btn {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #467061;
+  }
+
+  /* Button style */
+  #openPopupBtn {
+    margin: 20px;
+    background-color: #003e29;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Welcome to GreenTech</h1>
+<button id="openPopupBtn">Show Carbon Footprint Calculator</button>
+
+<!-- Popup Modal -->
+<div class="modal-bg" id="myModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <h2>Carbon Footprint Calculator</h2>
+    <p>Enter your data and calculate your carbon footprint!</p>
+
+    <!-- Simple calculator input (example) -->
+    <label for="electricity">Electricity usage (kWh/month):</label><br />
+    <input type="number" id="electricity" /><br /><br />
+
+    <label for="travel">Travel distance (km/month):</label><br />
+    <input type="number" id="travel" /><br /><br />
+
+    <button onclick="calculateFootprint()">Calculate</button>
+    <p id="result"></p>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('myModal');
+  const openBtn = document.getElementById('openPopupBtn');
+  const closeBtn = document.getElementById('closeBtn');
+  const result = document.getElementById('result');
+
+  // Show popup on button click
+  openBtn.onclick = () => {
+    modal.style.display = 'flex';
+    result.innerText = '';
+    document.getElementById('electricity').value = '';
+    document.getElementById('travel').value = '';
+  };
+
+  // Close popup on close button click
+  closeBtn.onclick = () => {
+    modal.style.display = 'none';
+  };
+
+  // Close popup if user clicks outside the modal content
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+
+  // Simple carbon footprint calculation (example logic)
+  function calculateFootprint() {
+    const electricity = Number(document.getElementById('electricity').value);
+    const travel = Number(document.getElementById('travel').value);
+
+    if (!electricity || !travel) {
+      result.style.color = 'red';
+      result.innerText = 'Please enter valid numbers in both fields.';
+      return;
+    }
+
+    // Example formula (not accurate, just demo):
+    // 0.5 kg CO2 per kWh electricity, 0.2 kg CO2 per km travel
+    const footprint = (electricity * 0.5) + (travel * 0.2);
+
+    result.style.color = '#003e29';
+    result.innerText = `Your estimated carbon footprint is ${footprint.toFixed(2)} kg CO2/month.`;
+  }
+</script>
+
+</body>
+</html>

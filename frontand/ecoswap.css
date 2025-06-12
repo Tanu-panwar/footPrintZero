@@ -14,11 +14,12 @@ body {
 /* Hero section */
 .ecoswap-header {
   display: flex;
+  height: 500px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 5%;
-  background: linear-gradient(90deg,#2aa8a4 0%, #00b386 100%);
+  background: linear-gradient(90deg,#2aa8a4 0%,#71d8bd 100%);
   color: #fff;
   gap: 2rem;
 }
@@ -116,7 +117,7 @@ body {
 
 /* Footer */
 footer {
-  background: #003e29;
+  background:#2aa8a4;
   color: #fff;
   text-align: center;
   padding: 15px 0;

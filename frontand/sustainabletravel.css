@@ -15,6 +15,7 @@ body {
 .hero-section {
   display: flex;
   flex-wrap: wrap;
+  height: 500px;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 5%;
