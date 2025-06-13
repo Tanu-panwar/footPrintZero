@@ -10,7 +10,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: aquamarine;
-    background: url(./images/index.bg.png) no-repeat;
+    background: url(./images/landingimages/index.bg.png) no-repeat;
     background-size: cover;
     background-position: center;
 }

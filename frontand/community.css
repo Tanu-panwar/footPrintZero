@@ -1,0 +1,123 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+  background-color: #f1f8f4;
+  color: #1e3c2f;
+}
+/* Hero section */
+.ecoswap-header {
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  background: linear-gradient(90deg,#3d8d1d 0%, #71c514 100%);
+  color: #fff;
+  gap: 2rem;
+}
+.ecoswap-header .overlay {
+  flex: 1 1 40%;
+}
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+.ecoswap-image {
+  flex: 1 1 50%;
+  text-align: right;
+}
+.ecoswap-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+/* Features */
+.features {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: white;
+}
+
+.features h3 {
+  color: #003e29;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #f0fff6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.feature-card img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #166b00;
+  color: #d4f5e7;
+  padding: 40px 20px 10px;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-section {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+.footer-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+.footer-section p,
+.footer-section ul li a {
+  color: #d4f5e7;
+  font-size: 0.95rem;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #166b00;
+  font-size: 0.9rem;
+}
