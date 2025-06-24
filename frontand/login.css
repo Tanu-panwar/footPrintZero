@@ -14,6 +14,29 @@ body{
     background-size: cover;
     background-position: center;
 }
+/* logo */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Or use right: 20px if you prefer */
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-family: 'Lucida Calligraphy', cursive;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
 /* login */
 .wrapper{
     width: 420px;
@@ -110,4 +133,103 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        width: 420px;
+        max-width: 90%;
+        padding: 35px 45px;
+        margin-top: 100px;
+        border-radius: 12px;
+    }
+
+    .wrapper h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper .input-box {
+        margin: 25px 0;
+    }
+
+    .input-box input {
+        font-size: 16px;
+        padding: 14px 45px 14px 18px;
+        height: 48px;
+    }
+
+    .input-box i {
+        font-size: 20px;
+    }
+
+    .wrapper .btn {
+        font-size: 18px;
+        height: 48px;
+    }
+
+    .register-link p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .wrapper {
+        width: 60%;
+        margin-top: 60px;
+        padding: 25px 30px;
+    }
+
+    .wrapper h1 {
+        font-size: 30px;
+    }
+
+    .wrapper .input-box {
+        margin: 20px 0;
+    }
+
+    .input-box input {
+        font-size: 15px;
+        padding: 10px 40px 10px 10px;
+        height: 45px;
+    }
+
+    .input-box i {
+        font-size: 16px;
+    }
+
+    .wrapper .btn {
+        font-size: 18px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 450px) {
+    .wrapper {
+        width: 80%;
+        padding: 20px 20px;
+        border-radius: 8px;
+    }
+
+    .wrapper h1 {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .wrapper .btn {
+        font-size: 14px;
+        height: 35px;
+        
+    }
+
+    .register-link p {
+        font-size: 13px;
+    }
+
+    .remember-forget {
+        font-size: 12.5px;
+        flex-direction: column;
+        gap: 8px;
+    }
 }
