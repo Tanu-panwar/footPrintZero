@@ -1,0 +1,26 @@
+{
+  "name": "greeentech-main",
+  "version": "1.0.0",
+  "description": "The **Carbon Footprint Calculator** is an intelligent and interactive web application designed to **analyze, track, and reduce an individual's carbon emissions**. Built as part of the **GreenTech Initiative**, this platform empowers users to make **data-driven decisions for a sustainable lifestyle**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanu-panwar/footPrintZero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanu-panwar/footPrintZero/issues"
+  },
+  "homepage": "https://github.com/Tanu-panwar/footPrintZero#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
