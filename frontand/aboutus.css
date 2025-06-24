@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f4f9f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-hero {
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.about-hero .content {
+  background-color: rgba(0, 62, 41, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-mission,
+.about-vision {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-mission img,
+.about-vision img {
+  flex: 1;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.about-mission .text,
+.about-vision .text {
+  flex: 1;
+}
+
+.about-mission h2,
+.about-vision h2 {
+  color: #003e29;
+  margin-bottom: 15px;
+}
+
+.about-team {
+  text-align: center;
+}
+
+.about-team h2 {
+  margin-bottom: 30px;
+  color: #003e29;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.member {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 200px;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.about-cta {
+  background-color: #003e29;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.about-cta .cta-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #003e29;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.about-cta .cta-button:hover {
+  background-color: #d6f5e6;
+}
+
+@media screen and (max-width: 768px) {
+  .about-mission,
+  .about-vision {
+    flex-direction: column;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+}
