@@ -16,83 +16,105 @@
   <link rel="stylesheet" href="output.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Navigation Sidebar -->
-    <nav class="navigation">
-      <ul>
-        <li>
-          <a href="./index.html">
-            <span class="icon logo">🍃</span>
-            <span class="title logo">GreenTech</span>
-          </a>
-        </li>
-        <li>
-          <a href="./landing.html">
-            <span class="icon"><i class="fa-solid fa-house"></i></span>
-            <span class="title">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#aboutus">
-            <span class="icon"><i class="fa-solid fa-address-card"></i></span>
-            <span class="title">About Us</span>
-          </a>
-        </li>
-        <li>
-          <a href="./feature.html">
-            <span class="icon"><i class="fa-solid fa-square-check"></i></span>
-            <span class="title">Features</span>
-          </a>
-        </li>
-        <li>
-          <a href="#whyus">
-            <span class="icon"><i class="fa-solid fa-clipboard-question"></i></span>
-            <span class="title">Why Us</span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <span class="icon"><i class="fa-solid fa-envelope-open-text"></i></span>
-            <span class="title">Contact Us</span>
-          </a>
-        </li>
-        <li>
-          <a href="./login.html">
-            <span class="icon"><i class="fa-solid fa-right-to-bracket"></i></span>
-            <span class="title">Login</span>
-          </a>
-        </li>
-        <li>
-          <a href="./signup.html">
-            <span class="icon"><i class="fa-solid fa-user-plus"></i></span>
-            <span class="title">Signup</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <section class="piechart">
-        <h1>Piechart of Carbon Footprint</h1>
-        <canvas id="carbonChart"></canvas>
-      </section>
-
-      <section class="card-container">
-        <h1>Tips to reduce Carbon Footprint</h1>
-        <div class="cards-wrapper">
-          <div class="card" id="footprintValue">
-            <p class="card-title text">Your Carbon Footprint</p>
-            <p class="card-info text">----</p>
-          </div>
-          <div class="card" id="footprintMessage">
-            <p class="card-title text">Impact</p>
-            <p class="card-info text">------</p>
-          </div>
-          <div class="card" id="footprintTip">
-            <p class="card-title text">Tip to Reduce</p>
-            <p class="card-info text">Loading...</p>
-          </div>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <span class="icon logo">🍃</span>
+                        <span class="title logo">GreenTech</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./landing.html./landing.html">
+                        <span class="icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutus./landing.html">
+                        <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                        <span class="title">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#features./landing.html">
+                        <span class="icon"><i class="fa-solid fa-square-check"></i></span>
+                        <span class="title">Features</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#whyus./landing.html">
+                        <span class="icon"><i class="fa-solid fa-clipboard-question"></i></span>
+                        <span class="title">Why Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact./landing.html">
+                        <span class="icon"><i class="fa-solid fa-envelope-open-text"></i></span>
+                        <span class="title">Contact Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                        <span class="icon"><i class="fa-solid fa-right-to-bracket"></i></span>
+                        <span class="title">Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./signup.html">
+                        <span class="icon"><i class="fa-solid fa-user-plus"></i></span>
+                        <span class="title">Signup</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="piechart">
+                <h1>Hi Josie,</h1>
+                <p>Here;s a summary of your emissions</p>
+                <canvas id="carbonChart"></canvas> <!-- Canvas for pie chart -->
+            </div>
+            
+            <div class="card-container">
+                <h1>Tips to reduce Carbon FootPrint</h1>
+                <div class="card" id="footprintValue">
+                    <p class="card-title">Value</p>
+                    <p class="card-info">----</p>
+                </div>
+                <div class="card" id="footprintMessage">
+                    <p class="card-title">Message</p>
+                    <p class="card-info">------</p>
+                </div>  
+                <!-- <div class="card" id="electricityDiv">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p class="card-title">Your electricity usage is <span id="electricity-output">0</span> kg CO₂</p>
+                    <p class="card-info">in kWh</p>
+                </div> -->
+                <div class="card" id="dynamicFootprint">
+                    <p class="card-title">Your Carbon Footprint</p>
+                    <p class="card-info" id="footprintData">Loading...</p>
+                </div>
+                <div class="card" id="fuelDiv">
+                    <p class="card-title">Monthly Fuel Consumption</p>
+                    <p class="card-info">in litre</p>
+                </div>
+                <!-- <div class="card" id="wasteDiv">
+                    <p class="card-title">Monthly Waste Production</p>
+                    <p class="card-info">in kg</p>
+                </div> -->
+                <!-- <div class="card" id="waterDiv"></div> -->
+                <div class="card" id="vehicleDiv">
+                    <p class="card-title">Personal Vehicle Usage</p>
+                    <p class="card-info">in km/month</p>
+                </div>
+                <div class="card" id="flightsDiv">
+                    <p class="card-title">Flights Taken per Month</p>
+                    <p class="card-info">in number</p>
+                </div>
+                <!-- <div class="card" id="homeDiv"></div> -->
+            </div>
         </div>
       </section>
     </main>

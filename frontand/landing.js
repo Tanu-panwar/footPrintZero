@@ -1,19 +1,42 @@
-const navLinks = document.querySelectorAll(" .nav-menu .nav-link");
+const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
+const navMenu = document.querySelector(".nav-menu");
 
+// Open menu on hamburger click
 menuOpenButton.addEventListener("click", () => {
     document.body.classList.toggle("show-mobile-menu");
 });
 
-menuCloseButton.addEventListener("click", () =>  menuOpenButton.click());
+// Close menu on ✖ button click
+menuCloseButton.addEventListener("click", () => {
+    document.body.classList.remove("show-mobile-menu");
+});
 
+// Close menu on any nav link click
 navLinks.forEach(link => {
-    link.addEventListener("click", () => menuOpenButton.click());
-})
+    link.addEventListener("click", () => {
+        document.body.classList.remove("show-mobile-menu");
+    });
+});
+
+// Close menu on outside click (blur area)
+document.addEventListener("click", function (event) {
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickOnOpenBtn = menuOpenButton.contains(event.target);
+    const isClickOnCloseBtn = menuCloseButton.contains(event.target);
+
+    if (
+        document.body.classList.contains("show-mobile-menu") &&
+        !isClickInsideMenu &&
+        !isClickOnOpenBtn &&
+        !isClickOnCloseBtn
+    ) {
+        document.body.classList.remove("show-mobile-menu");
+    }
+});
 
 
-// slides and next-prev btn at slides
 
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
@@ -59,6 +82,7 @@ prevBtn.addEventListener("click", () => {
 showSlide(currentIndex);
 startAutoSlide();
 
+
 // keyboard arrows moving slide left right
 document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft") {
@@ -73,7 +97,8 @@ document.addEventListener("keydown", (e) => {
 });
 
 
-// swipe effect at mobile
+
+// mobile swipe slides
 let touchStartX = 0;
 let touchEndX = 0;
 
