@@ -123,16 +123,144 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    body {
+        padding: 10px;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+        font-size: 110px;
+    }
+
     .main-heading {
-        font-size: 24px;
+        font-size: 26px;
+        padding: 0 10px;
     }
+
     .slogan {
-        font-size: 14px;
+        font-size: 15px;
     }
+
     .start-btn {
         font-size: 14px;
         padding: 10px 20px;
     }
 }
+
+@media (max-width: 650px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .index-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        font-size: 85px;
+        margin-bottom: 15px;
+    }
+
+    .main-heading {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .slogan {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .start-btn {
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        height: 100vh;
+        padding: 8px;
+        padding-right: 14px;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        font-size: 65px;
+    }
+
+    .main-heading {
+        font-size: 18px;
+    }
+
+    .slogan {
+        font-size: 14px;
+    }
+
+    .start-btn {
+        font-size: 14px;
+        padding: 6px 6px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 370px) {
+    body {
+        padding: 6px;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+        margin-bottom: 12px;
+    }
+
+    .main-heading {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 0 8px;
+    }
+
+    .slogan {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+    .start-btn {
+        font-size: 11px;
+        padding: 5px 14px;
+    }
+}
+
+
+
 
